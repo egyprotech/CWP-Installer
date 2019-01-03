@@ -8,9 +8,7 @@ sudo mkswap /swapfile
 sudo swapon /swapfile
 free -m
 yum install nano -y
-sudo nano /etc/fstab
 echo "/swapfile   swap    swap    sw  0   0" >> /etc/fstab
 sudo yum install screen wget -y
-screen
 wget http://centos-webpanel.com/cwp-el7-latest
 sh cwp-el7-latest
